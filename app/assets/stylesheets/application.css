@@ -20,7 +20,7 @@ html{
 body{
 	width: 960px;
 	margin: auto;
-	background:url('/assets/escheresque_ste_@2X.png');
+	background:url('/assets/background.png');
 	height: 100%;
 }
 
