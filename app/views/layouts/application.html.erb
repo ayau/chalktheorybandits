@@ -7,9 +7,16 @@
     <%= csrf_meta_tags %>
 </head>
 <body>
-<header>
-    <h3 class="bandname">CHALK THEORY BANDITS</h3>
+
+<header class='header'>
+    <section>
+        <div class='photo'>
+            <div class='overlay'></div>
+        </div>
+        <h3 class="bandname">CHALK THEORY BANDITS</h3>
+    </section>
 </header>
+
 <section class='container'>
     <%= yield %>
 </section>
