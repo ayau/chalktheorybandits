@@ -4,204 +4,109 @@
 
 
 #home {
+	margin: 0px;
+	padding: 0px;
 
-    height: 500px;
-    background: rgba(255,255,255, 0.8);
-    border-left: 3px solid white;
-    border-right: 3px solid white;
+	.band_photo_wrapper{
+		background: black;
+		box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.7);
+	}
 
-.linksfromhomepage{
-	font-size: 40px;
-	position: center;
-	font-family: "Impact";
-	font-style: oblique;
-}
+	.band_photo{
+		width: 960px;
+		height: 500px;
+		background-image: url('/assets/band_photo.jpg');
+		background-size: 100% auto;
+		background-position: 0px -150px;
+		margin: auto;
+	}
 
-a:hover{
-	color: #111111;
-}
+	h2 {
+		font-size: 36px;
+		font-weight: normal;
+	}
 
-}
-
-#tracks {
-	height: 500px;
-	background: rgba(255,255,255, 0.8);
-	border-left: 3px solid white;
-    border-right: 3px solid white;
-}
-
-
-#concerts{
-	height: 500px;
-	background: rgba(255,255,255, 0.8);
-	border-left: 3px solid white;
-    border-right: 3px solid white;
-
-.stpatricksday{
-	color: #006400;
-	font-size: 45px;
-	font-family: "Impact";
-
-}
-
-}
-
-#booking{
-	height: 500px;
-	background: rgba(255,255,255, 0.8);
-	border-left: 3px solid white;
-    border-right: 3px solid white;
-
-   .bookingtext{
-   	font-size: 30px;
-   	font-family: "Helvetica";
-   }
-}
-
-#performers{
-	height: 2500px;
-	background: rgba(255,255,255, 0.8);
-	border-left: 3px solid white;
-    border-right: 3px solid white;
-	.sebphoto{
+	.bio {
 		position: relative;
-        margin-top: 20px;
-        margin-left: 10px;
-        width: 300px;
-        height: 400px;
-        background-size: 100% auto;
+
+		p {
+			padding: 0px;
+			margin: 0px;
+		}
+		.container {
+			padding: 20px 0px;
+		}
+
+		h3 {
+			&.seb {
+				border-bottom: 2px solid #CC2367;
+			}
+			&.jason {
+				border-bottom: 2px solid #23CC5E;
+			}
+			&.alex {
+				border-bottom: 2px solid #CC23B3;
+			}
+			&.jordyn {
+				border-bottom: 2px solid #23CCB0;
+			}
+			&.paul {
+				border-bottom: 2px solid #CCBE23;
+			}
+			&.david {
+				border-bottom: 2px solid #2342CC;
+			}
+		}
+
+		ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		li {
+			padding-bottom: 50px;
+			max-width: 600px;
+		}
+
+		.performer_info {
+		 	margin-left: 130px;	
+		}
 	}
 
-	.sebname{
+	.avatar {
 		position: absolute;
-		top: 450px;
-		left: 525px;
-		font-size: 30px;
-		font-family: "Impact";
-	}
-	.sebtext{
-		position: absolute;
-		top: 500px;
-		left: 525px;
-		width: 500px;
-		height: 400px;
-		font-size: 20px;
-		font-family: "Impact";
+		height: 100px;
+		width: 100px;
+		padding: 0px;
+		margin: 5px;
+		border-radius: 50px;
+		box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+		border: 3px solid white;
+		float: left;
+		overflow: hidden;
+
+		img {
+			height: auto;
+			width: 100px;
+		}
 	}
 
-	.jasonphoto{
-		position: absolute;
-		top: 800px;
-		width: 550px;
-		margin-left: 20px;
-		height: 350px;
-	}
-	.jasonname{
-		position: absolute;
-		top: 900px;
-		left: 225px;
-		font-size: 30px;
-		font-family: "Impact";
-	}
-	.jasontext{
-		position: absolute;
-		top: 950px;
-		left: 225px;
-		width: 500px;
-		height: 400px;
-		font-size: 20px;
-		font-family: "Impact";
-	}
-	.alexphoto{
-		position: absolute;
-		top: 1200px;
-		left: 200px;
-		width: 560px;
-		height: 400px;
-	}
-	.alexname{
-		position: absolute;
-		top: 1300px;
-		left: 775px;
-		font-size: 30px;
-		font-family: "Impact";
-	}
-	.alextext{
-		position: absolute;
-		top: 1350px;
-		left: 775px;
-		width: 425px;
-		height: 400px;
-		font-size: 20px;
-		font-family: "Impact";
-	}
-	.jordynphoto{
-		position: absolute;
-		top: 1625px;
-		left: 650px;
-		width: 400px;
-		height: auto;
-	}
-	.jordynname{
-		position: absolute;
-		top: 1700px;
-		left: 225px;
-		font-size: 30px;
-		font-family: "Impact";
-	}
-	.jordyntext{
-		position: absolute;
-		top: 1750px;
-		left: 225px;
-		width: 425px;
-		height: 400px;
-		font-size: 20px;
-		font-family: "Impact";
-	}
-	.paulphoto{
-		position: absolute;
-		top: 2050px;
-		left: 225px;
-		width: 350px;
-		height: auto;
-	}
-	.paulname{
-		position: absolute;
-		top: 2100px;
-		left: 650px;
-		font-size: 30px;
-		font-family: "Impact";
-	}
-	.paultext{
-		position: absolute;
-		top: 2150px;
-		left: 650px;
-		width: 425px;
-		height: 400px;
-		font-size: 20px;
-		font-family: "Impact";
-	}
-	.davidphoto{
-		position: absolute;
-		top: 2550px;
-		left: 650px;
-		width: 350px;
-		height: auto;
-	}
-	.davidname{
-		position: absolute;
-		top: 2600px;
-		left: 225px;
-		font-size: 30px;
-		font-family: "Impact";
-	}
-	.davidtext{
-		position: absolute;
-		top: 2650px;
-		left: 225px;
-		width: 425px;
-		height: 400px;
-		font-size: 20px;
-		font-family: "Impact";
+	.concerts {
+		background: black;
+		padding: 20px 0px;
+
+		h2, h3, p {
+			color: white;
+		}
+
+		h3 {
+			font-weight: normal;
+			font-size: 24px;
+		}
+
+		article {
+			padding-left: 50px;
+		}
 	}
 }
