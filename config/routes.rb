@@ -4,13 +4,6 @@ Bandproject::Application.routes.draw do
 
   match '/home' => 'pages#home'
 
-  # match '/tracks' => 'pages#tracks'
-
-  # match '/performers' => 'pages#performers'
-
-  # match '/concerts' => 'pages#concerts'
-
-  # match '/booking' => 'pages#booking'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
