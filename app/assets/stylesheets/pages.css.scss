@@ -123,6 +123,13 @@
 		li {
 			padding-bottom: 50px;
 			max-width: 600px;
+			position: relative;
+
+			img{
+				position:absolute;
+				top: 50px;
+				margin-left:645px;
+			}
 		}
 
 		.performer_info {
