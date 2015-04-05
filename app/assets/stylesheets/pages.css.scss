@@ -17,7 +17,7 @@
 	.band_photo{
 		width: 960px;
 		height: 500px;
-		background-image: url('/assets/bandphotostagesmall.jpg');
+		background-image: url('https://s3.amazonaws.com/uploads.hipchat.com/21163/341124/aJMDodHKGgKsl3b/upload.png');
 		background-size: 100% auto;
 		background-position: 0px -25px;
 		margin: auto;
@@ -175,6 +175,18 @@
 
 		article {
 			padding-left: 50px;
+		}
+	}
+
+	.photos {
+		padding: 20px 0px;
+	}
+
+	.booking {
+		background: black;
+		padding: 20px 0px;
+		h2, h3, p {
+			color: white;
 		}
 	}
 }

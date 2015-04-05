@@ -17,7 +17,7 @@
               var theMinsBox  = $("#nummins");
               var theSecsBox  = $("#numsecs");
 
-              var eventTime = 1397324450;
+              var eventTime = 1429372800;
               var curTime = new Date().getTime()/1000;
               var diff = eventTime - curTime;
               theDaysBox.html(Math.floor(diff/60/60/24));
@@ -56,6 +56,25 @@
           });
 
     </script>
+
+    <!-- GALLERY -->
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/assets/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/assets/fancybox/jquery.fancybox.pack.js"></script>
+
+    <!-- justified -->
+    <script type='text/javascript' src='/assets/jquery.justifiedGallery.min.js'></script>
+    <link rel='stylesheet' href='/assets/justifiedGallery.min.css' type='text/css'>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#gallery").justifiedGallery({rowHeight: 150, lastRow : 'justify'});
+            $(".fancybox").fancybox();
+        });
+    </script>
     <!--
     <div class='countdown'>
     <div class='stop'>
@@ -67,12 +86,12 @@
     -->
     <section class='band_photo_wrapper'>
         <div class='band_photo'></div>
-        <div class='show' style="display:none;">
+        <div class='show'>
             <hr style="background: #CC2367"/><hr style="background: #23CC5E"/><hr style="background: #CC23B3"/>
             <hr style="background: #23CCB0"/><hr style="background: #CCBE23"/><hr style="background: #2342CC"/>
             <p>Chalk Theory Bandits Presents</p>
-            <h3 style='clear: both' class='show-title'>1 MORE SHOW</h3>
-            <h3 class='show-location'>Saturdy of Fling, 1:40pm, Lower Quad</h3>
+            <h3 style='clear: both' class='show-title'>REUNION SHOW</h3>
+            <h3 class='show-location'>Saturdy of Fling, 12:00pm, Lower Quad</h3>
             <div id="clock-ticker" class="clearfix">
                 <div class="block">
                     <span class="flip-top" id="numdays">8</span>
@@ -214,7 +233,7 @@
                     <!-- Designed by Alberto Guerra Quintanilla on the Noun Project -->
                     <img class='instruments' src='/assets/drums.svg'/>
                 </li>
-                <h2>And Our Beloved Alumnus:</h2>
+                <!-- <h2>And Our Beloved Alumnus:</h2> -->
                 <li>
                     <div class='avatar'>
                         <img src='/assets/seb.jpg'>
@@ -227,6 +246,8 @@
                         <p>Hometown: Manhattan</p>
                         <p>Favorite Song: I Will Wait by Mumford and Sons</p>
                     </div>
+                    <!-- Designed by Gustavo Perez Rangel on the Noun Project -->
+                    <img class='instruments' src='/assets/guitar.svg'/>
                 </li>
             </ul>
         </div>
@@ -235,9 +256,25 @@
     <section id='link_concerts' class='concerts'>
         <div class='container'>
             <h2>Our Past Concerts</h2>
-            <iframe width="560" height="315" src="//www.youtube.com/embed/vvRM3GnX8Xs?rel=0" frameborder="0" allowfullscreen></iframe>
-            <iframe width="420" height="315" src="//www.youtube.com/embed/LdwQxps7Py4?rel=0" frameborder="0" allowfullscreen></iframe>
+            <center>
+                <iframe width="560" height="315" src="//www.youtube.com/embed/VUVp1N4Tpk0?rel=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="//www.youtube.com/embed/D2XKQURj_2A?rel=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="//www.youtube.com/embed/LdwQxps7Py4?rel=0" frameborder="0" allowfullscreen></iframe>
+            </center>
         </div>
+    </section>
+
+    <section id='link_photos' class='photos'>
+        <div class='container'>
+            <h2>Photo Gallery</h2>
+            <div id='gallery'>
+                <% (0..34).each do |i| %>
+                <a class='fancybox' rel='group' href='/assets/gallery/c<%= i %>.jpg'><img src='/assets/gallery/c<%= i %>.jpg'/></a>
+                <% end %>
+                </a>
+            </div>
+        </div>
+
     </section>
 
     <section id='link_booking' class='booking'>
