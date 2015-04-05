@@ -2,7 +2,7 @@
 
     <!-- Add jQuery library -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    
+
     <script type="text/javascript">
 
           var _gaq = _gaq || [];
@@ -64,12 +64,12 @@
     <!-- GALLERY -->
     
     <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/assets/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="/assets/fancybox/jquery.fancybox.pack.js"></script>
+    <%= stylesheet_link_tag    "fancybox/jquery.fancybox.css", :media => "screen" %>
+    <%= javascript_include_tag "fancybox/jquery.fancybox.pack.js" %>
 
     <!-- justified -->
-    <script type='text/javascript' src='/assets/jquery.justifiedGallery.min.js'></script>
-    <link rel='stylesheet' href='/assets/justifiedGallery.min.css' type='text/css'>
+    <%= stylesheet_link_tag    "justifiedGallery.min.css", :media => "screen" %>
+    <%= javascript_include_tag "jquery.justifiedGallery.min.js" %>
 
     <script type="text/javascript">
         $(function() {
