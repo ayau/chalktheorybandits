@@ -11,6 +11,9 @@ class PagesController < ApplicationController
 	def concerts
 	end
 
+	def photos
+	end
+
 	def booking
 	end
 end
